@@ -1,6 +1,10 @@
 
 var applyLanguage = function (lang) {
-	alert('now language is: ' + lang);
+	if (lang) {
+		alert('now language is: ' + lang);
+	} else {
+		alert("In localStorage you don't have language ");
+	}
 }
 
 var getCurrentLanguage = function () {
@@ -55,3 +59,5 @@ $save.addEventListener('click', function () {
 	saveLocalStorage();
 });
 initRadio();
+var language = localStorage.getItem('Lang');
+window.onload = applyLanguage(language);
