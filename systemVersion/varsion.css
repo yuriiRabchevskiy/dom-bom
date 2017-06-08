@@ -1,0 +1,7 @@
+body {
+    background-color: black;
+}
+.download-message {
+  color: #fff;
+  display: none;
+}

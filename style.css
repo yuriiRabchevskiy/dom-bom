@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+}
+a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    width: 150px;
+    margin: 12px;
+    border: 1px solid greenyellow;
+    box-shadow: -7px 15px 26px 0px;
+    text-align: center;
+    background: chartreuse;
+    border-radius: 50%;
+    height: 150px;
+    line-height: 150px;
+    font-size: 20px;
+}
+a:hover {
+    color: white;
+    animation: rotate 1s linear 0.1s;
+}
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(359deg);}
+}

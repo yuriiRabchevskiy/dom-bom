@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="localization.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="languages">
+        <label><input type="radio" name="lang" id="ua" value="ua">UA</label>
+        <label><input type="radio" name="lang" id="ru" value="ru">RU</label>
+        <label><input type="radio" name="lang" id="en" value="en">ENG</label>
+    </div>
+
+    <div id="welcome-message">
+        <span class="lang lang-ua">Привіт</span>
+        <span class="lang lang-ru">Привет</span>
+        <span class="lang lang-en">Hello</span> , username!
+
+        <span class="lang lang-ua">Раді тебе бачити!</span>
+        <span class="lang lang-ru">Рады видеть Вас!</span>
+        <span class="lang lang-en">Glad to see you!</span>
+    </div>
+
+     <button id="save">Save</button> 
+     <button id="get" onclick="getLocalStorage()">Get</button> 
+    <script src="localization.js"></script>
+</body>
+
+</html>
